@@ -1,0 +1,13 @@
+.navbar {
+    background-color: darkgray; /* Example background color */
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-brand, .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 100px;
+    font-size: 27px;
+  }
