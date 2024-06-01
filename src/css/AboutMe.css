@@ -1,0 +1,65 @@
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the component fills the screen height */
+  width: 100vw; /* Ensures the component fills the screen width */
+  padding: 0 20px;
+  text-align: center;
+  background-image: url('/public/img/background.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire component */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  color: white; /* Adjust text color for better visibility against the background */
+  z-index: 1; /* Ensure this element is above others in the stacking order */
+  position: relative; /* Ensure the z-index applies */
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-card {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: orange; /* Text color */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 600px; /* Maximum width of the card */
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-pic {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .text-content, .image-content {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-pic {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}

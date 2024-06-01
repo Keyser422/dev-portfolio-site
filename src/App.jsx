@@ -1,20 +1,39 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import NavBar from './components/Nav';
+import { useState, useEffect } from 'react';
 import Home from './components/Home';
-import AboutMe from './components/AboutMe';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import TopNav from './components/TopNav';
+import SideNav from './components/SideNav';
 
 function App() {
+  const [showTopNav, setShowTopNav] = useState(true);
+  const [showSideNav, setShowSideNav] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setShowTopNav(false);
+      setShowSideNav(true);
+    } else {
+      setShowTopNav(true);
+      setShowSideNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   return (
     <BrowserRouter>
-    <NavBar />
-    <Routes>
-      {/* <Route path="/" element={<Home />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/about-me" element={<AboutMe />} />
-      <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+      <div className={`app ${showTopNav ? 'with-top-nav' : ''}`}>
+        {showTopNav && <TopNav />}
+        {showSideNav && <SideNav />}
+        <Routes>
+          <Route path ="/" element={<Home />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
