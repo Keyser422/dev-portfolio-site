@@ -1,33 +1,52 @@
-.about-me {
+.intro {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ensures the component fills the screen height */
-  width: 100vw; /* Ensures the component fills the screen width */
+  height: 100vh; /* Ensures the component fills the screen height */
+  width: 100%; /* Ensures the component fills the screen width */
   padding: 0 20px;
   text-align: center;
   background-image: url('/public/img/background.jpg'); /* Path to your background image */
   background-size: cover; /* Ensure the image covers the entire component */
-  background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  color: white; /* Adjust text color for better visibility against the background */
-  z-index: 1; /* Ensure this element is above others in the stacking order */
   position: relative; /* Ensure the z-index applies */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
 .text-content {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 250px;
+  padding-left: 200px;
+}
+
+.intro-header {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  padding-bottom: 100px;
+  padding-left: 35px;
+  color: white; /* Adjust the color as per your preference */
+  font-family: 'sp-blunt-regular';
+  font-weight: 250;
 }
 
 .text-card {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  color: orange; /* Text color */
+  background-color: rgba(0, 0, 0, 0.4) !important; /* Semi-transparent background */
+  color: white !important; /* Text color */
   padding: 20px; /* Padding inside the card */
   border-radius: 10px; /* Rounded corners */
   max-width: 600px; /* Maximum width of the card */
+  font-family: 'sp-blunt-regular';
+  border: 10px solid rgb(184, 102, 8);
 }
 
 .image-content {
@@ -35,15 +54,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 200px;
 }
 
 .portfolio-pic {
-  width: 400px;
+  width: 500px;
   height: auto;
   object-fit: cover;
   margin-left: 20px;
   border-radius: 50%;
+  border: 10px solid rgb(184, 102, 8);
 }
+
 
 @media (max-width: 768px) {
   .about-me {

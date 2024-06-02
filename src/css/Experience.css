@@ -1,0 +1,95 @@
+.page-header {
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'sp-blunt-regular';
+    font-size: 50px;
+}
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(253, 249, 249); /* Light grey background */
+  }
+
+  .projects-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #030303;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+    border: 10px solid black;
+    transition: transform 0.3s ease;
+  }
+
+  /* Custom styles for each project card */
+  .project-card-pawsitive {
+    background-color: black;
+    min-height: 600px; /* Light cyan background for Pawsitive Vibes */
+  }
+
+  .project-card-carcar {
+    background-color: black;
+    min-height: 600px;
+    /* Light orange background for Car Car */
+  }
+
+  .project-card-portfolio {
+    background-color: black;
+    min-height: 600px; /* Light purple background for Portfolio Website */
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+
+  .pv-project-image {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+  }
+
+  .cc-project-image {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+  }
+
+  .pw-project-image {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+  }
+
+  .cards-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #e9ecf0; /* Bootstrap primary color */
+    font-family: 'sp-blunt-regular';
+  }
+
+  .cards-text {
+    font-size: 1em;
+    color: #c4c1c1;
+    font-family: 'sp-blunt-regular';
+  }
+
+  .list-group-tech-stack {
+    font-family: 'sp-blunt-regular';
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+
+  .list-group-technoligies {
+    text-align: left;
+    font-family: 'sp-blunt-regular';
+    background-color: black;
+    color: white;
+    border: none;
+  }

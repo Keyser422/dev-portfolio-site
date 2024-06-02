@@ -1,4 +1,5 @@
-import React from 'react';
+import Card from 'react-bootstrap/Card';
+import SideNav from './SideNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Skills.css';
 
@@ -20,14 +21,22 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="container skills-container">
-      <h2>Skills</h2>
-      <div className="row justify-content-center">
-        {skills.map((skill, index) => (
-          <div key={index} className="col-6 col-md-3 text-center">
-            <img src={skill.src} alt={skill.alt} className="img-fluid skills-table" />
-          </div>
-        ))}
+    <div className="skills-page">
+      <SideNav />
+      <div className="skills-content">
+        <h1 className="skills-title">Skills</h1>
+        <div className="row justify-content-center">
+          {skills.map((skill, index) => (
+            <div key={index} className="col-6 col-md-3 text-center">
+              <Card className="skill-card">
+                <Card.Img variant="top" src={skill.src} alt={skill.alt} className="skill-image" />
+                <Card.Body>
+                  <Card.Title className="cards-title">{skill.alt}</Card.Title>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
