@@ -3,6 +3,7 @@
     padding-top: 100px;
     font-family: 'sp-blunt-regular';
     font-size: 50px;
+    color: black;
 }
 .projects-container {
     display: flex;
@@ -11,7 +12,7 @@
     height: 100vh;
     width: 100%;
     text-align: center;
-    background-color: rgb(253, 249, 249); /* Light grey background */
+    background-color: rgb(7, 0, 0); /* Light grey background */
   }
 
   .projects-title {
@@ -29,18 +30,18 @@
   /* Custom styles for each project card */
   .project-card-pawsitive {
     background-color: black;
-    min-height: 600px; /* Light cyan background for Pawsitive Vibes */
+    max-height: 520px; /* Light cyan background for Pawsitive Vibes */
   }
 
   .project-card-carcar {
     background-color: black;
-    min-height: 600px;
+    min-height: 500px;
     /* Light orange background for Car Car */
   }
 
   .project-card-portfolio {
     background-color: black;
-    min-height: 600px; /* Light purple background for Portfolio Website */
+    min-height: 500px; /* Light purple background for Portfolio Website */
   }
 
   .project-card:hover {
@@ -63,6 +64,11 @@
     width: 100%;
     height: 184px;
     object-fit: cover;
+  }
+
+  .bo-project-image {
+    width: 100px;
+    height: 100px;
   }
 
   .cards-title {

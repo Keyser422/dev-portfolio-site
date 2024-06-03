@@ -1,0 +1,35 @@
+.container {
+  max-width: 600px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'sp-blunt-regular';
+  font-weight: 250;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: white;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e242b;
+}

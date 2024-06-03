@@ -1,0 +1,63 @@
+.footer {
+  width: 100%;
+  background-color: rgb(5, 2, 0);
+  color: white;
+  font-family: Fraunces;
+  font-weight: 250;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h2, h4 {
+  margin: 10px 0;
+  color: white !important;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.ownership {
+  padding-left: 250px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white !important;
+  padding: 10px 20px;
+  font-family: Fraunces;
+  font-weight: 250;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

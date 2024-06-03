@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import SideNav from './SideNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Skills.css';
 
@@ -20,14 +20,28 @@ const skills = [
 ];
 
 export default function Skills() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const skillsPerPage = 3;
+
+  const nextSkills = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + skillsPerPage) % skills.length);
+  };
+
+  const prevSkills = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - skillsPerPage + skills.length) % skills.length);
+  };
+
+  const displayedSkills = skills.slice(currentIndex, currentIndex + skillsPerPage).concat(
+    skills.slice(0, Math.max(0, currentIndex + skillsPerPage - skills.length))
+  );
+
   return (
     <div className="skills-page">
-      <SideNav />
       <div className="skills-content">
         <h1 className="skills-title">Skills</h1>
         <div className="row justify-content-center">
-          {skills.map((skill, index) => (
-            <div key={index} className="col-6 col-md-3 text-center">
+          {displayedSkills.map((skill, index) => (
+            <div key={index} className="col-4 text-center">
               <Card className="skill-card">
                 <Card.Img variant="top" src={skill.src} alt={skill.alt} className="skill-image" />
                 <Card.Body>
@@ -36,6 +50,10 @@ export default function Skills() {
               </Card>
             </div>
           ))}
+        </div>
+        <div className="navigation-buttons">
+          <button onClick={prevSkills} className="btn btn-custom">Previous</button>
+          <button onClick={nextSkills} className="btn btn-custom">Next</button>
         </div>
       </div>
     </div>

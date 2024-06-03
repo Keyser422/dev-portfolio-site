@@ -1,21 +1,23 @@
 .skills-page {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
 }
 
 .skills-content {
-  margin-left: 1px;
-  margin-right: 260px;/* Adjust the margin to account for the sidebar width */
-  padding: 20px;
-  flex: 1;
-  background-color: #f5f3f3; /* Light grey background */
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
   border-radius: 10px;
-  margin-top: 20px;
 }
 
 .skills-title {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-family: 'sp-blunt-regular';
+  font-weight: 250;
 }
 
 .skill-card {
@@ -33,11 +35,30 @@
   height: 100px;
   object-fit: cover;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .cards-title {
   font-size: 1.2em;
   margin-top: 10px;
   color: black;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.btn-custom {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #333;
 }
