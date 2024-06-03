@@ -9,42 +9,51 @@
   background-image: url('/public/img/background.jpg'); /* Path to your background image */
   background-size: cover; /* Ensure the image covers the entire component */
   background-repeat: no-repeat; /* Do not repeat the image */
-  position: relative; /* Ensure the z-index applies */
+  position: relative;
+  z-index: 1; /* Ensure the z-index applies */
 }
 
 .content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Spread the content to the sides */
   width: 100%;
   position: relative;
+  flex-wrap: wrap;
+  padding: 20px; /* Add padding to ensure spacing */
 }
 
 .text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 250px;
-  padding-left: 200px;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left;
+  margin: 0 20px; /* Add margin for spacing */
 }
 
 .intro-header {
   font-size: 2.5em;
+  margin-bottom: 10px; /* Reduce margin for better spacing */
+  color: white;
+  font-family: 'sp-blunt-regular';
+  font-weight: 250;
+}
+
+.intro-sub-header {
+  font-size: 1.5em; /* Adjust font size for better hierarchy */
   margin-bottom: 20px;
-  padding-bottom: 100px;
-  padding-left: 35px;
-  color: white; /* Adjust the color as per your preference */
+  color: white;
   font-family: 'sp-blunt-regular';
   font-weight: 250;
 }
 
 .text-card {
-  background-color: rgba(0, 0, 0, 0.4) !important; /* Semi-transparent background */
-  color: white !important; /* Text color */
-  padding: 20px; /* Padding inside the card */
-  border-radius: 10px; /* Rounded corners */
-  max-width: 600px; /* Maximum width of the card */
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
   font-family: 'sp-blunt-regular';
   border: 10px solid rgb(184, 102, 8);
 }
@@ -54,34 +63,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
 }
 
 .portfolio-pic {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   object-fit: cover;
-  margin-left: 20px;
   border-radius: 50%;
   border: 10px solid rgb(184, 102, 8);
 }
 
+@media (max-width: 1200px) {
+  .text-content {
+    margin: 0 10px; /* Adjust margin for medium screens */
+  }
+
+  .intro-header {
+    font-size: 2em; /* Adjust font size for medium screens */
+  }
+
+  .intro-sub-header {
+    font-size: 1.3em; /* Adjust font size for medium screens */
+  }
+}
 
 @media (max-width: 768px) {
-  .about-me {
+  .content {
     flex-direction: column;
-    min-height: 100vh;
-    width: 100vw;
+    align-items: center;
+    text-align: center; /* Center text for small screens */
   }
 
   .text-content, .image-content {
-    flex: none;
     margin-bottom: 20px;
+    align-items: center; /* Center align items for small screens */
+  }
+
+  .text-content {
+    text-align: center; /* Center text for small screens */
   }
 
   .portfolio-pic {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
+    width: 80%;
+    max-width: 300px; /* Adjust max-width for small screens */
+    margin: 0 auto;
+  }
+
+  .intro-header {
+    font-size: 1.8em; /* Adjust font size for small screens */
+  }
+
+  .intro-sub-header {
+    font-size: 1.2em; /* Adjust font size for small screens */
   }
 }

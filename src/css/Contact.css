@@ -1,10 +1,21 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #1e242b; /* Dark background color */
+}
+
 .container {
   max-width: 600px;
   background-color: black;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   font-family: 'sp-blunt-regular';
   font-weight: 250;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -28,8 +39,34 @@ h2 {
   background-color: black;
   border: none;
   color: white;
+  font-family: 'sp-blunt-regular';
+  font-weight: 250;
 }
 
 .btn-primary:hover {
-  background-color: #1e242b;
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .form-group label {
+    font-size: 1em;
+  }
+
+  .form-control {
+    font-size: 1em;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+    padding: 10px;
+  }
 }

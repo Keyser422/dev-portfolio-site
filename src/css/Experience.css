@@ -1,101 +1,109 @@
 .page-header {
-    text-align: center;
-    padding-top: 100px;
-    font-family: 'sp-blunt-regular';
-    font-size: 50px;
-    color: black;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'sp-blunt-regular';
+  font-size: 2.5em;
+  color: black;
 }
-.projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(7, 0, 0); /* Light grey background */
-  }
 
-  .projects-title {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #030303;
-  }
+.projects-page {
+  padding: 20px;
+  background-color: white; /* Dark background color */
+}
 
-  .project-card {
-    margin-bottom: 20px;
-    border: 10px solid black;
-    transition: transform 0.3s ease;
-  }
+.project-card {
+  border: 10px solid black;
+  transition: transform 0.3s ease;
+  background-color: black;
+  color: white;
+}
 
-  /* Custom styles for each project card */
-  .project-card-pawsitive {
-    background-color: black;
-    max-height: 520px; /* Light cyan background for Pawsitive Vibes */
-  }
+.project-card:hover {
+  transform: scale(1.05);
+}
 
-  .project-card-carcar {
-    background-color: black;
-    min-height: 500px;
-    /* Light orange background for Car Car */
-  }
+.pv-project-image,
+.cc-project-image,
+.pw-project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-  .project-card-portfolio {
-    background-color: black;
-    min-height: 500px; /* Light purple background for Portfolio Website */
-  }
+.bo-project-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image */
+}
 
-  .project-card:hover {
-    transform: scale(1.05);
-  }
+.cards-title {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #e9ecf0;
+  font-family: 'sp-blunt-regular';
+}
 
-  .pv-project-image {
-    width: 100%;
-    height: 185px;
-    object-fit: cover;
-  }
+.cards-text {
+  font-size: 1em;
+  color: #c4c1c1;
+  font-family: 'sp-blunt-regular';
+}
 
-  .cc-project-image {
-    width: 100%;
-    height: 184px;
-    object-fit: cover;
-  }
+.list-group-tech-stack {
+  font-family: 'sp-blunt-regular';
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+  border: none;
+}
 
-  .pw-project-image {
-    width: 100%;
-    height: 184px;
-    object-fit: cover;
-  }
+.list-group-technologies {
+  text-align: left;
+  font-family: 'sp-blunt-regular';
+  background-color: black;
+  color: white;
+  border: none;
+}
 
-  .bo-project-image {
-    width: 100px;
-    height: 100px;
-  }
-
+@media (max-width: 1200px) {
   .cards-title {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #e9ecf0; /* Bootstrap primary color */
-    font-family: 'sp-blunt-regular';
+    font-size: 1em;
   }
 
   .cards-text {
-    font-size: 1em;
-    color: #c4c1c1;
-    font-family: 'sp-blunt-regular';
+    font-size: 0.9em;
   }
 
-  .list-group-tech-stack {
-    font-family: 'sp-blunt-regular';
-    text-decoration: underline;
-    background-color: black;
-    color: white;
-    border: none;
+  .list-group-technologies {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 10px;
   }
 
-  .list-group-technoligies {
-    text-align: left;
-    font-family: 'sp-blunt-regular';
-    background-color: black;
-    color: white;
-    border: none;
+  .page-header {
+    font-size: 2em;
+    padding-top: 20px;
   }
+
+  .cards-title {
+    font-size: 0.9em;
+  }
+
+  .cards-text {
+    font-size: 0.8em;
+  }
+
+  .list-group-technologies {
+    font-size: 0.8em;
+  }
+
+  .bo-project-image {
+    width: 80px;
+    height: 80px;
+  }
+}

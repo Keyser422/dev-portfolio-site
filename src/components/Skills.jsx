@@ -36,12 +36,12 @@ export default function Skills() {
   );
 
   return (
-    <div className="skills-page">
+    <div className="skills-page" id='skills'>
       <div className="skills-content">
         <h1 className="skills-title">Skills</h1>
         <div className="row justify-content-center">
           {displayedSkills.map((skill, index) => (
-            <div key={index} className="col-4 text-center">
+            <div key={index} className="col-12 col-sm-6 col-md-4 text-center mb-4">
               <Card className="skill-card">
                 <Card.Img variant="top" src={skill.src} alt={skill.alt} className="skill-image" />
                 <Card.Body>
@@ -54,6 +54,9 @@ export default function Skills() {
         <div className="navigation-buttons">
           <button onClick={prevSkills} className="btn btn-custom">Previous</button>
           <button onClick={nextSkills} className="btn btn-custom">Next</button>
+        </div>
+        <div className="back-to-top">
+          <a href="#top" className="btn btn-custom">Back to Top</a>
         </div>
       </div>
     </div>
