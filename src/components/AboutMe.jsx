@@ -25,7 +25,7 @@ export default function AboutMe() {
               information clearly and effectively. Additionally, the adaptability and problem-solving skills
               I cultivated allow me to navigate and thrive in dynamic and challenging situations.
               These competencies, paired with a commitment to excellence and continuous learning,
-              make me a versatile and reliable asset in any industry.
+              have made me a versatile and reliable asset in any industry.
               <br /><br />
               In addition to my professional pursuits, my love of learning fuels my enjoyment of tinkering
               with tech in all its facets. Whether it be as simple as building a custom P.C or automating

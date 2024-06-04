@@ -8,7 +8,7 @@
   font-weight: 250;
   align-items: center;
   position: relative;
-  z-index: 1000;/* Ensure alignment in the center */
+  z-index: 1000;
 }
 
 .navbar-brand {
