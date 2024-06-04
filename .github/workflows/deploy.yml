@@ -23,6 +23,10 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          REACT_APP_EMAIL_JS_USER_ID: ${{ secrets.REACT_APP_EMAIL_JS_USER }}
+          REACT_APP_EMAIL_JS_SERVICE_ID: ${{ secrets.REACT_APP_EMAIL_JS_SERVICE_ID }}
+          REACT_APP_EMAIL_JS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAIL_JS_TEMPLATE_ID }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
