@@ -22,7 +22,7 @@ export default function Projects() {
               <ListGroup.Item className="list-group-technologies">Libraries: Bootstrap.css, GoogleAPI, Email.js</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="https://www.github.com/Keyser422" target="_blank" rel="noopener noreferrer">
+              <Card.Link href="https://github.com/Keyser422/Pawsitive-Vibes" target="_blank" rel="noopener noreferrer">
                 <img src="img/github.png" alt="GitHub icon" width="40px" />
               </Card.Link>
             </Card.Body>
@@ -43,7 +43,7 @@ export default function Projects() {
               <ListGroup.Item className="list-group-technologies">Frontend: Javascript, React</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="https://www.github.com/Keyser422" target="_blank" rel="noopener noreferrer">
+              <Card.Link href="https://github.com/Keyser422/Car-Car" target="_blank" rel="noopener noreferrer">
                 <img src="img/github.png" alt="GitHub icon" width="40px" />
               </Card.Link>
             </Card.Body>
@@ -64,7 +64,7 @@ export default function Projects() {
               <ListGroup.Item className="list-group-technologies">Libraries: Bootstrap.css, React-Bootstrap, Email.js</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="https://www.github.com/Keyser422" target="_blank" rel="noopener noreferrer">
+              <Card.Link href="https://github.com/Keyser422/dev-portfolio-site" target="_blank" rel="noopener noreferrer">
                 <img src="img/github.png" alt="GitHub icon" width="40px" />
               </Card.Link>
             </Card.Body>
